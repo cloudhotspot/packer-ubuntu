@@ -17,3 +17,21 @@ $ packer build ubuntu1404.json
 --> virtualbox-iso: 'virtualbox' provider box: packer_virtualbox-iso_virtualbox.box
 --> vmware-iso: 'vmware' provider box: packer_vmware-iso_vmware.box 
 ```
+
+Build a single provider:
+
+```bash
+$ packer build --only=virtualbox-iso ubuntu1404.json
+...
+...
+==> Builds finished. The artifacts of successful builds are:
+--> virtualbox-iso: 'virtualbox' provider box: packer_virtualbox-iso_virtualbox.box
+```
+
+```bash
+$ packer build --only=vmware-iso ubuntu1404.json
+...
+...
+==> Builds finished. The artifacts of successful builds are:
+--> vmware-iso: 'vmware' provider box: packer_vmware-iso_vmware.box 
+```
