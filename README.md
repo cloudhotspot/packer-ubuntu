@@ -35,3 +35,7 @@ $ packer build --only=vmware-iso ubuntu1404.json
 ==> Builds finished. The artifacts of successful builds are:
 --> vmware-iso: 'vmware' provider box: packer_vmware-iso_vmware.box 
 ```
+
+To import a built box into Vagrant:
+
+`$ vagrant box add --name=cloudhotspot/ubuntu <box-file>`
