@@ -2,6 +2,8 @@
 
 This repository includes a Packer build script for creating Ubuntu boxes for Vagrant.
 
+Boxes built with this build script are published at <a href="https://atlas.hashicorp.com/cloudhotspot/boxes/ubuntu" target="_blank">atlas.hashicorp.com</a>. 
+
 ## Supported Providers
 
 - Virtualbox
